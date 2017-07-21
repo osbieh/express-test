@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fontFamilies>
+    <fontFamily name="Liberation Sans">
+        <normal>C:\express\grails-app\views\reports\jrxmlFiles\arial.ttf</normal>
+        <bold>C:\express\grails-app\views\reports\jrxmlFiles\arial.ttf</bold>
+        <italic>C:\express\grails-app\views\reports\jrxmlFiles\arial.ttf</italic>
+        <boldItalic>C:\express\grails-app\views\reports\jrxmlFiles\arial.ttf</boldItalic>
+        <pdfEncoding>Identity-H</pdfEncoding>
+        <pdfEmbedded>true</pdfEmbedded>
+        <exportFonts>
+            <export key="net.sf.jasperreports.html">'Liberation Sans', Arial, Helvetica, sans-serif</export>
+            <export key="net.sf.jasperreports.xhtml">'Liberation Sans', Arial, Helvetica, sans-serif</export>
+        </exportFonts>
+    </fontFamily>
+</fontFamilies>

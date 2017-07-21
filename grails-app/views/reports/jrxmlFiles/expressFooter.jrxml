@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="expressFooter" language="groovy" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="31e3385e-dde9-4b2f-a103-74aa9058fbac">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="currentUser" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="printTime" class="java.lang.String" isForPrompting="false"/>
+	<title>
+		<band height="15">
+			<staticText>
+				<reportElement x="421" y="0" width="134" height="15" isPrintWhenDetailOverflows="true" uuid="aa8ba761-d76f-426d-8d79-a0265d547702"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="7" isBold="false" pdfEncoding="Identity-H"/>
+				</textElement>
+				<text><![CDATA[Express Technologies@0598333056]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="143" y="0" width="97" height="15" uuid="f60b8d36-04f3-4e7b-98d6-97b469046525"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{currentUser}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="45" y="0" width="98" height="15" uuid="60887b0e-003e-4029-a620-df6fee57cede"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{printTime}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Transparent" x="0" y="0" width="45" height="15" uuid="aaf9e126-4bc2-4460-be62-fb8973cfcbb3"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Printed On:]]></text>
+			</staticText>
+		</band>
+	</title>
+</jasperReport>

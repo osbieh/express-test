@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report1" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c20d8e3f-c56c-4267-afa3-ac4205264ad6">
+	<property name="ireport.zoom" value="1.1000000000000003"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="json">
+		<![CDATA[]]>
+	</queryString>
+	<field name="productName" class="java.lang.String"/>
+	<field name="quantity" class="java.lang.String"/>
+	<field name="price" class="java.lang.String"/>
+	<field name="total" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<columnHeader>
+		<band height="12" splitType="Stretch">
+			<staticText>
+				<reportElement x="303" y="0" width="252" height="12" uuid="9136c3f8-3415-405e-a03f-8667d62bc0e7"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[إسم الصنف]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="235" y="0" width="68" height="12" uuid="0cecbe53-3502-4f44-aa1e-a9036b5c2a24"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[الكمية]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="152" y="0" width="83" height="12" uuid="45ede7bb-fc2c-419e-9835-88b279aae172"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[السعر]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="0" width="152" height="12" uuid="a089c1d9-369c-4368-a71d-fb0810343926"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[إجمالي]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="13" splitType="Stretch">
+			<textField>
+				<reportElement x="303" y="0" width="252" height="13" isPrintWhenDetailOverflows="true" uuid="0bffc7f6-9a7a-460c-a9b1-b370768e74ba"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" pdfEncoding="Cp1252"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{productName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="235" y="0" width="68" height="13" uuid="43a399aa-5c5c-4dae-81af-fe00da078ecb"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" pdfEncoding="Cp1252"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{quantity}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="152" y="0" width="83" height="13" uuid="a90ecf0b-08ed-40b9-a3ce-ef14e05e4dea"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" pdfEncoding="Cp1252"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{price}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="0" width="152" height="13" uuid="36e49bfd-1c0d-441e-b543-851009e40db8"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" pdfEncoding="Cp1252"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{total}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="15">
+			<staticText>
+				<reportElement x="152" y="0" width="150" height="15" uuid="40c15649-b392-46b0-9bb1-56533a618166"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" pdfEncoding="Cp1252"/>
+				</textElement>
+				<text><![CDATA[المجموع]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+</jasperReport>
